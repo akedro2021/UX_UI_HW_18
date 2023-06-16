@@ -82,4 +82,63 @@ button {
     font-family:"Lato";
     box-shadow: 3px 6px 8px #A7734C;
     padding: 6px;
+    width: 200px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+.caseStudyImg {
+    height:500px;
+}
+.caseStudyLogo {
+    width: 100%;
+    display: flex;
+    /* padding:20px; */
+}
+.workCard {
+    display: flex;
+    padding: 20px;
+}
+.mock {
+    padding-right: 2%;
+}
+.skillCard {
+    width: 31%;
+    padding: 1%;
+    margin: 2%;
+    background-color: #4A5775;
+    border-radius: 8px;
+    text-align: center;
+}
+.skillIcon {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.learnMore {
+    align-self: center;
+}
+p {
+    color: #3B455B;
+    font-family: "lato";
+}
+h3 {
+    color: #3B455B;
+    font-family: "lato";
+}
+.skillText {
+    color: white;
+}
+.myWork {
+    background-color: #C88A5C;
+}
+.caseStudyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    padding: 25px;
 }
