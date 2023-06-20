@@ -93,7 +93,6 @@ button {
 }
 .caseStudyLogo {
     width: 100%;
-    display: flex;
     /* padding:20px; */
 }
 .workCard {
@@ -101,7 +100,8 @@ button {
     padding: 20px;
 }
 .mock {
-    padding-right: 2%;
+    padding: 20px;
+
 }
 .skillCard {
     width: 31%;
@@ -132,14 +132,67 @@ h3 {
 .skillText {
     color: white;
 }
-
 .myWork {
     background-color: #C88A5C;
+    padding: 1%;
 }
 .caseStudyInfo {
     display: flex;
     flex-direction: column;
     justify-content: start;
     background-color: white;
-    padding: 25px;
+    padding: 20px;
+    height: 500px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    grid-template-areas:
+    "melodyMock melodyInfo melodyInfo"
+    "wolfInfo wolfInfo wolfMock"
+    "travelMock travelInfo travelInfo";
+}
+#melodyMock {
+    grid-area: melodyMock;
+}
+#melodyInfo {
+    grid-area: melodyInfo;
+}
+#wolfMock {
+    grid-area: wolfMock;
+}
+#wolfInfo {
+    grid-area: wolfInfo;
+}
+#travelMock {
+    grid-area: travelMock;
+}
+#travelInfo {
+    grid-area: travelInfo;
+}
+.mySkills {
+    justify-content: center;
+}
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        flex-direction: column;
+    }
+    .skillCard {
+        width: 90%;
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "melodyMock"
+        "melodyInfo"
+        "wolfMock"
+        "wolfInfo"
+        "travelMock"
+        "travelInfo"
+    }
+    .caseStudyInfo {
+        height: 320px;
+    }
 }
